@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="D:\M. Khoiru azzadi XI MM\HTML\web saya khoi\favicon.ico" type="image/x-icon">
+    <link rel="icon" href="D:\M. Khoiru azzadi XI MM\HTML\web saya khoi\favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+    <title>Khoi Personal Website</title>
+    <style>
+        body{
+            margin-left: 250px;
+            margin-right: 250px;
+            background-color: black;
+            margin-bottom: 30px;
+        }
+        article{
+            background-image: url(Image/abstrak.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            border-radius: 10mm;
+            height: 650px;
+        }
+        button{
+            background-color: turquoise;
+            border: none;
+            padding: 10px 27px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5cm;
+        }
+        .button1 {
+            background-color: turquoise;
+            text-decoration: none; 
+        }
+        .button1:hover {
+            background-color: rgb(26, 136, 125);
+        }
+        .button2 {
+            background-color: rgb(26, 136, 125);
+            text-decoration: none; 
+        }
+
+        .button2:hover {
+            background-color: rgb(26, 136, 125);
+        }
+        .button3 {
+            background-color: turquoise;
+            text-decoration: none; 
+        }
+
+        .button3:hover {
+            background-color: rgb(26, 136, 125);
+        }
+        a {
+           text-decoration: none;
+           line-height: inherit;
+        }
+        footer{
+            margin-top: 10px;
+            background-color: transparent;
+            color: white;
+        }
+    </style>
+    </head>
+
+    <body align="center">
+    
+
+        <article style="text-align: center;">
+            <nav>
+                <button class="button1"><a style="color: white;" href="index.html">Home</a></button>
+                <button class="button2"><a style="color: white;" href="About me.html">About me</a></button>
+                <button class="button3"><a style="color: white;" href="Contact.html">Contact</a></button>
+            </nav>
+            <p><h2>My Hobby</h2></p>
+            <div class="w3-content w3-display-container">
+
+                <div class="w3-display-container mySlides">
+                  <img src="Image/ronald.png" style="border-radius: 5mm; width:100%">
+                  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                    Football
+                  </div>
+                </div>
+                
+                <div class="w3-display-container mySlides">
+                  <img src="Image/gambar.png" style="border-radius: 5mm; width:100%">
+                  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                    Drawing
+                  </div>
+                </div>
+                
+                <div class="w3-display-container mySlides">
+                  <img src="Image/kupu.png" style="border-radius: 5mm; width:100%">
+                  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                    Swimming
+                  </div>
+                </div>
+                
+                <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+                
+                </div>
+                
+                <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+                
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
+                }
+                
+                function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                     x[i].style.display = "none";  
+                  }
+                  x[slideIndex-1].style.display = "block";  
+                }
+                </script>
+
+        </article>
+        <footer align="center">
+            Copyright &copy; 2023 by Khoi
+        </footer>
+</body>
+</html>
